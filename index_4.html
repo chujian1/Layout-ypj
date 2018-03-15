@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右两栏(定位)</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .wrap{
+            width:900px;
+            margin:0 auto;
+            position:relative;/*此处设置使得left和right相对于wrap进行绝对定位，否则，会相对于body*/
+        }
+        #left{
+            width:200px;
+            height:500px;
+            background:#cff;
+            position: absolute;
+            top:0;
+            left:0;
+            
+        }
+        #right{
+            width:700px;
+            height:500px;
+            background-color:#fcc;
+            position: absolute;
+            top:0;
+            right:0;
+        }
+    </style>
+
+</head>
+<body>
+<div class="wrap">
+    <aside id="left"></aside>
+    <section id="right"></section>
+</div>
+
+</body>
+</html>

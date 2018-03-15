@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左中右</title>
+    <style>
+        .wrap{
+            margin:0 auto;
+            width:80%;/*使得浏览器窗口大小发生变化，中间main的width动态发生变化*/
+        }
+        #left {
+            width: 200px;
+            height: 500px;
+            background: #66ccff;
+            float:left;
+        }
+        #right{
+            width:200px;
+            height:500px;
+            background: #66ccff;
+            float:right;
+        }
+        #main{
+            height:500px;
+            background:#ffcccc;
+            margin:0 210px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <aside id="left"></aside>
+        <aside id="right"></aside>
+        <section id="main"></section><!--注意section的位置，在两个侧栏的后边，如果写在其他位置，两个侧栏的浮动会出现bug-->
+    </div>
+
+</body>
+</html>

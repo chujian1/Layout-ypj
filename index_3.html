@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右两栏(纯浮动)</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .wrap{
+            width:900px;
+            margin:0 auto;
+            height:500px;/*因为left和right都浮动了，所以没有高度了，需要手动设置*/
+        }
+        #left{
+            width:200px;
+            height:500px;
+            background:#cff;
+            float:left;
+        }
+        #right{
+            width:700px;
+            height:500px;
+            background-color:#fcc;
+            float:left;
+        }
+    </style>
+
+</head>
+<body>
+<div class="wrap">
+    <aside id="left"></aside>
+    <section id="right"></section>
+</div>
+
+
+</body>
+</html>

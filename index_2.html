@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右两栏(浮动+普通流)</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .wrap{
+            width:900px;
+            margin:0 auto;
+        }
+        #left{
+            width:200px;
+            height:500px;
+            background:#cff;
+            float:left;
+        }
+        #right{
+            margin-left:200px;/*left 浮动元素且width为200px，此设置可动态变化right的width*/
+            height:500px;
+            background-color:#fcc;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <aside id="left"></aside>
+        <section id="right"></section>
+    </div>
+    <!--浮动+普通流-->
+
+</body>
+</html>

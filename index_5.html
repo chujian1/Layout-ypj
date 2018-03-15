@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右两栏加页眉页脚</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .wrap{
+            width:900px;
+            margin:0 auto;
+        }
+        #header{
+            height:100px;
+            background:#cff;
+        }
+        #main{
+            height:400px;
+            background:#99ccff;
+        }
+        #footer{
+            height:80px;
+            background:#66ccff;
+        }
+        #left{
+            width:200px;
+            height:100%;
+            background:#ffcccc;
+            float:left;
+        }
+        #right{
+            width:700px;
+            height:100%;
+            background:deepskyblue;
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="wrap"></header>
+    <section id="main" class="wrap">
+        <aside id="left"></aside>
+        <div id="right"></div>
+    </section>
+    <footer id="footer" class="wrap"></footer>
+
+</body>
+</html>

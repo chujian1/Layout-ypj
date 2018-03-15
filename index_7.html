@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左中右之双飞翼</title>
+    <style>
+        .wrap{
+            width:900px;
+            margin:0 auto;
+        }
+        #main{
+            width:100%;/*使得中间width动态变化，而且必须设置，因为浮动元素的宽度默认有里面的内容撑开，否则没有不显示*/
+            height:500px;
+            background: #ffcccc;
+            float:left;
+        }
+        #left{
+            width:200px;
+            height:500px;
+            float:left;
+            background:#66ccff;
+            margin-left:-100%;/*左外边距距离父元素-900px*/
+        }
+        #right{
+            width:200px;
+            height:500px;
+            float:left;
+            background:#66ccff;
+            margin-left:-200px;
+        }
+        .content{
+            height:500px;
+            margin:0 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <section id="main">
+            <div class="content">
+                content
+            </div>
+        </section>
+        <aside id="left">left</aside>
+        <aside id="right">right</aside>
+    </div>
+</body>
+</html>
